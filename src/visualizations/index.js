@@ -1,0 +1,7 @@
+export { NelderMead1d } from './nelderMead1D'
+export { NelderMeadContour } from './nelderMead'
+export { GradientContour } from './gradientDescent'
+export { ConjugateGradientContour, ConjugateGradientSolverContour } from './conjugateGradient'
+export { LineSearchContour } from './linesearch'
+export { banana, flower, himmelblau, matyas } from './functions'
+export { createCitiesAnimation } from './cities'

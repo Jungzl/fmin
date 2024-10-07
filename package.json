@@ -1,26 +1,43 @@
 {
   "name": "fmin-ts",
   "version": "0.0.1",
+  "type": "module",
+  "author": "Jungzl",
+  "packageManager": "pnpm@9.11.0",
   "description": "Unconstrained funcion minimization in Javascript",
   "keywords": ["fmin", "optimization", "Nelder-Mead", "Conjudate Gradient"],
   "license": "BSD-3-Clause",
-  "main": "build/fmin.js",
-  "jsnext:main": "index",
+  "main": "dist/fmin.cjs",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/fmin.d.ts",
+        "default": "./dist/fmin.js"
+      },
+      "require": {
+        "types": "./dist/fmin.d.cts",
+        "default": "./dist/fmin.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
   "homepage": "https://github.com/Jungzl/fmin",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Jungzl/fmin.git"
   },
-  "jshintConfig": {
-    "esnext": true
-  },
+  "sideEffects": false,
+  "files": ["dist"],
   "scripts": {
     "format": "biome check --write",
-    "test": "",
+    "test": "vitest",
+    "build": "tsup",
+    "attw": "attw --pack .",
     "prepare": "",
     "postpublish": ""
   },
   "devDependencies": {
+    "@arethetypeswrong/cli": "^0.16.4",
     "@biomejs/biome": "^1.9.2",
     "@types/d3": "^7.4.3",
     "@types/d3-array": "^3.2.1",
@@ -49,7 +66,5 @@
     "d3-scale-chromatic": "^3.1.0",
     "d3-selection": "^3.0.0",
     "d3-shape": "^3.2.0"
-  },
-  "author": "Jungzl",
-  "packageManager": "pnpm@9.11.0"
+  }
 }
