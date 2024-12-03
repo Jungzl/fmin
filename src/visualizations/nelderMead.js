@@ -1,6 +1,6 @@
-import { AnimatedContour } from './animatedContour';
-import { flower } from './functions';
-import { Slider } from './slider';
+import { AnimatedContour } from './animatedContour.js';
+import { flower } from './functions.js';
+import { Slider } from './slider.js';
 
 export function NelderMeadContour(div) {
     this.colour = d3.schemeCategory10[0];

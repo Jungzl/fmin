@@ -1,5 +1,5 @@
-import { createDropShadowFilter } from './dropshadow';
-import { Slider } from './slider';
+import { createDropShadowFilter } from './dropshadow.js';
+import { Slider } from './slider.js';
 
 function mdsGradient(x, distances, fxprime) {
     let loss = 0;

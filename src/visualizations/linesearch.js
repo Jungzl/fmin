@@ -1,6 +1,6 @@
-import { himmelblau } from './functions';
-import { GradientContour } from './gradientDescent';
-import { Slider } from './slider';
+import { himmelblau } from './functions.js';
+import { GradientContour } from './gradientDescent.js';
+import { Slider } from './slider.js';
 
 export function LineSearchContour(div) {
     this.duration = 1000;

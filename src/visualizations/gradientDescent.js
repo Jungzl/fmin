@@ -1,5 +1,5 @@
-import { AnimatedContour } from './animatedContour';
-import { Slider } from './slider';
+import { AnimatedContour } from './animatedContour.js';
+import { Slider } from './slider.js';
 
 export function GradientContour(div) {
     this.stepSize = 0.01;

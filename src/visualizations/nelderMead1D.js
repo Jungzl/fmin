@@ -1,6 +1,6 @@
-import { createDropShadowFilter } from './dropshadow';
-import { LineGraph } from './linegraph';
-import { Slider } from './slider';
+import { createDropShadowFilter } from './dropshadow.js';
+import { LineGraph } from './linegraph.js';
+import { Slider } from './slider.js';
 
 export function NelderMead1d(div) {
     this.div = div;

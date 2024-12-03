@@ -1,5 +1,5 @@
-import { dot, norm2, scale, weightedSum, zeros } from './blas1';
-import { wolfeLineSearch } from './linesearch';
+import { dot, norm2, scale, weightedSum, zeros } from './blas1.js';
+import { wolfeLineSearch } from './linesearch.js';
 
 export function gradientDescent(f, initial, params) {
     params = params || {};

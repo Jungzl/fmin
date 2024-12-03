@@ -1,6 +1,6 @@
 import { ContourPlot } from 'contour_plot';
-import { createDropShadowFilter } from './dropshadow';
-import { banana, booth, flower, himmelblau, matyas } from './functions';
+import { createDropShadowFilter } from './dropshadow.js';
+import { banana, booth, flower, himmelblau, matyas } from './functions.js';
 
 export function AnimatedContour(div) {
     this.current = this.current || himmelblau;

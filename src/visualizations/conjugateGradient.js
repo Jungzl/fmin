@@ -1,5 +1,5 @@
-import { banana, matyas } from './functions';
-import { GradientContour } from './gradientDescent';
+import { banana, matyas } from './functions.js';
+import { GradientContour } from './gradientDescent.js';
 
 export function ConjugateGradientContour(div) {
     this.colour = d3.schemeCategory10[2];

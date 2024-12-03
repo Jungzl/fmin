@@ -1,5 +1,5 @@
-import { dot, gemv, norm2, scale, weightedSum } from './blas1';
-import { wolfeLineSearch } from './linesearch';
+import { dot, gemv, norm2, scale, weightedSum } from './blas1.js';
+import { wolfeLineSearch } from './linesearch.js';
 
 export function conjugateGradient(f, initial, params) {
     // allocate all memory up front here, keep out of the loop for perfomance

@@ -1,4 +1,4 @@
-import { dot, weightedSum } from './blas1';
+import { dot, weightedSum } from './blas1.js';
 
 /// searches along line 'pk' for a point that satifies the wolfe conditions
 /// See 'Numerical Optimization' by Nocedal and Wright p59-60
