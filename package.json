@@ -11,6 +11,7 @@
     ],
     "license": "BSD-3-Clause",
     "main": "build/fmin.js",
+    "module": "index.js",
     "jsnext:main": "index",
     "homepage": "https://github.com/benfred/fmin",
     "repository": {
